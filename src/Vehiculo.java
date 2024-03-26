@@ -7,7 +7,7 @@ public abstract class Vehiculo implements Pintable {
         this.posicion = 0;
     }
 
-    public avanzar() {
+    public void avanzar() {
         this.posicion += this.ruedas;
     }
 
@@ -15,11 +15,9 @@ public abstract class Vehiculo implements Pintable {
         return this.posicion;
     }
 
-    public abstract void pintar(){
+    public abstract void pintar();
 
-    }
-
-    public setearRuedas(int cantidadDeRuedas) {
+    public void setearRuedas(int cantidadDeRuedas) {
         this.ruedas = cantidadDeRuedas;
         this.posicion = 0;
     }
